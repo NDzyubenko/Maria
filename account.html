@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Maria</title>
+<script src="js/jquery-1.11.0.min.js"></script>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/paira-typography.css" rel="stylesheet" type="text/css" media="all" />	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,300,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+				</script>	
+<script src="js/simpleCart.min.js"> </script>
+<link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/memenu.js"></script>
+<script>$(document).ready(function(){$(".memenu").memenu();});</script>				
+</head>
+<body> 
+	<div class="top-header">
+	<div class="container">
+		<div class="top-header-main">
+			<div class="col-md-4 top-header-left">
+			</div>
+			<div class="col-md-4 top-header-middle">
+				<a href="index.html"><img src="images/logo-4.png" alt="" /></a>
+			</div>
+			<div class="col-md-4 top-header-right">
+				<div class="cart box_1">
+						<a href="checkout.html">
+						<h3> <div class="total">
+							<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items</div>
+                                <i class="fa fa-shopping-cart"></i>
+						</a>
+						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
+						<div class="clearfix"> </div>
+					</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+	<div class="header-bottom">
+		<div class="container">
+			<div class="top-nav">
+				<ul class="memenu skyblue"><li class="active"><a href="index.html">Home</a></li>
+					<li class="grid"><a href="products.html">Shop</a>
+					</li>
+				</ul>
+			</div>
+	</div>
+	</div>
+	<div class="account">
+		<div class="container"> 
+			<div class="account-bottom">
+				<div class="col-md-6 account-left">
+					<form>
+					<div class="account-top heading">
+						<h3>NEW CUSTOMERS</h3>
+					</div>
+					<div class="address">
+						<span>First Name</span>
+						<input type="text">
+					</div>
+					<div class="address">
+						<span>Last Name</span>
+						<input type="text">
+					</div>
+					<div class="address">
+						<span>Email Address</span>
+						<input type="text">
+					</div>
+					<div class="address">
+						<span>Password</span>
+						<input type="text">
+					</div>
+					<div class="address">
+						<span>Reenter Password</span>
+						<input type="text">
+					</div>
+					<div class="address new">
+						<input type="submit" value="submit">
+					</div>
+					</form>
+				</div>
+				<div class="col-md-6 account-left">
+					<form>
+					<div class="account-top heading">
+						<h3>REGISTERED CUSTOMERS</h3>
+					</div>
+					<div class="address">
+						<span>Email Address</span>
+						<input type="text">
+					</div>
+					<div class="address">
+						<span>Password</span>
+						<input type="text">
+					</div>
+					<div class="address">
+						<a class="forgot" href="#">Forgot Your Password?</a>
+						<input type="submit" value="Login">
+					</div>
+				</div>
+				</form>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>	
+</body>
+<div class="footer-text">
+		<div class="container">
+			<div class="footer-main">
+				<p class="footer-class">© NDzyubenko</p>
+			</div>
+		</div>
+	</div>
+</html>
